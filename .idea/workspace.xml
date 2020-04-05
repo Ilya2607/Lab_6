@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a75d06ec-675b-4973-8934-54acd72b281a" name="Default Changelist" comment="" />
+    <list default="true" id="a75d06ec-675b-4973-8934-54acd72b281a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +17,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZnDRGC4lQL7A4V1fvI2vAmrpUV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="bsu.rfe.java.group8.lab2.KOROTCHENKO.var10" />
@@ -34,6 +43,20 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="MainFrame" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bsu.rfe.java.group8.lab2.KOROTCHENKO.var10.MainFrame" />
+      <module name="Lab_6" />
+      <option name="PROGRAM_PARAMETERS" value="10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bsu.rfe.java.group8.lab2.KOROTCHENKO.var10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="bsu.rfe.java.group8.lab2.KOROTCHENKO.var10.MainFrame" />
       <option name="PROGRAM_PARAMETERS" value="10" />
@@ -41,6 +64,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainFrame" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -54,5 +82,18 @@
       <updated>1585465954802</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
