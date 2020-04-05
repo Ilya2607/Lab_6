@@ -47,6 +47,14 @@ public class Field extends JPanel {
 // BouncingBall выполняет сам в конструкторе
         balls.add(new BouncingBall(this));
     }
+
+    public void delball()
+    {
+
+        balls.remove(0);
+
+    }
+
     // Метод синхронизированный, т.е. только один поток может
 // одновременно быть внутри
     public synchronized void pause() {

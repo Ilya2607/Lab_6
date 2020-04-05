@@ -49,7 +49,7 @@ public class MainFrame extends JFrame {
 
         Action delball = new AbstractAction("Удалить мяч") {
             public void actionPerformed(ActionEvent event) {
-               
+                field.delball( );
             }
         };
 
