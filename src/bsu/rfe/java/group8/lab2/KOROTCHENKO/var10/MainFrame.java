@@ -71,6 +71,20 @@ public class MainFrame extends JFrame {
         resumeMenuItem = controlMenu.add(resumeAction);
         resumeMenuItem.setEnabled(false);
 
+        Action stopRedAction = new AbstractAction("Остановить движениe шаров (R<10)") {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                field.stopTenBall();
+                offTenMenuItem.setEnabled(false);
+                onTenMenuItem.setEnabled(true);
+
+            }
+        };
+        offTenMenuItem = controlMenu.add(stopRedAction);
+        offTenMenuItem.setEnabled(false);
+
+        
+
 // Добавить в центр граничной компоновки поле Field
         getContentPane().add(field, BorderLayout.CENTER);
     }
