@@ -49,11 +49,19 @@ public class Field extends JPanel {
     }
 
     public synchronized void stopTenBall(){
-
+        for (BouncingBall ball : balls){
+            if (ball.getSize()<10){
+                ball.stopTen();
+            }
+        }
     }
 
     public synchronized void resumeTenBall(){
-        
+        for (BouncingBall ball : balls){
+            if (ball.getSize()<10){
+                ball.resumeTen();
+            }
+        }
     }
 
     // Метод синхронизированный, т.е. только один поток может

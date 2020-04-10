@@ -57,7 +57,7 @@ public class BouncingBall implements Runnable {
         thisThread.start();
     }
 
-    public void stopRed(){
+    public void stopTen(){
         isTen = true;
         speedYor = speedY;
         speedXor = speedX;
@@ -65,7 +65,7 @@ public class BouncingBall implements Runnable {
         speedY = 0;
     }
 
-    public void resumeRed(){
+    public void resumeTen(){
         isTen = false;
         speedX = speedXor;
         speedY = speedYor;
