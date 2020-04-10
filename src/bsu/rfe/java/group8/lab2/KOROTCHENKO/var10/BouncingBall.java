@@ -21,6 +21,9 @@ public class BouncingBall implements Runnable {
     private int speed;
     private double speedX;
     private double speedY;
+    private Double speedXor = null;
+    private Double speedYor = null;
+    private boolean isTen = false;
     // Конструктор класса BouncingBall
     public BouncingBall(Field field) {
 // Необходимо иметь ссылку на поле, по которому прыгает мяч,
@@ -52,6 +55,18 @@ public class BouncingBall implements Runnable {
         Thread thisThread = new Thread(this);
 // Запускаем поток
         thisThread.start();
+    }
+
+    public void stopRed(){
+
+    }
+
+    public void resumeRed(){
+
+    }
+
+    public int getSize(){
+        
     }
 
     // Метод run() исполняется внутри потока. Когда он завершает работу,
