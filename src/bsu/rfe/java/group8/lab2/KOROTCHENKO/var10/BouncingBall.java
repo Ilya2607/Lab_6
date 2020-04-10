@@ -58,15 +58,21 @@ public class BouncingBall implements Runnable {
     }
 
     public void stopRed(){
-
+        isTen = true;
+        speedYor = speedY;
+        speedXor = speedX;
+        speedX = 0;
+        speedY = 0;
     }
 
     public void resumeRed(){
-
+        isTen = false;
+        speedX = speedXor;
+        speedY = speedYor;
     }
 
     public int getSize(){
-        
+        return radius;
     }
 
     // Метод run() исполняется внутри потока. Когда он завершает работу,
