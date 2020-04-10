@@ -74,7 +74,7 @@ public class MainFrame extends JFrame {
         Action stopRedAction = new AbstractAction("Остановить движениe шаров (R<10)") {
             @Override
             public void actionPerformed(ActionEvent e) {
-                field.stopTenBall();
+                field.pause();
                 offTenMenuItem.setEnabled(false);
                 onTenMenuItem.setEnabled(true);
 
@@ -86,7 +86,7 @@ public class MainFrame extends JFrame {
         Action resumeRedAction = new AbstractAction("Возобновить движениe шаров (R<10)") {
             @Override
             public void actionPerformed(ActionEvent e) {
-                field.resumeTenBall();
+                field.resume();
                 onTenMenuItem.setEnabled(false);
                 offTenMenuItem.setEnabled(true);
             }
