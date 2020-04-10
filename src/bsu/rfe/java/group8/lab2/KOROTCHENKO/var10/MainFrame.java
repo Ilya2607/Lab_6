@@ -17,6 +17,8 @@ public class MainFrame extends JFrame {
     private static final int HEIGHT = 500;
     private JMenuItem pauseMenuItem;
     private JMenuItem resumeMenuItem;
+    private JMenuItem onTenMenuItem;
+    private JMenuItem offTenMenuItem;
     // Поле, по которому прыгают мячи
     private Field field = new Field();
     // Конструктор главного окна приложения
@@ -36,25 +38,13 @@ public class MainFrame extends JFrame {
         Action addBallAction = new AbstractAction("Добавить мяч") {
             public void actionPerformed(ActionEvent event) {
                 field.addBall();
-                if (!pauseMenuItem.isEnabled() &&
-                        !resumeMenuItem.isEnabled()) {
-// Ни один из пунктов меню не являются
-// доступными - сделать доступным "Паузу"
+                if (!pauseMenuItem.isEnabled() && !resumeMenuItem.isEnabled()) {
                     pauseMenuItem.setEnabled(true);
                 }
             }
         };
         menuBar.add(ballMenu);
         ballMenu.add(addBallAction);
-
-        Action delball = new AbstractAction("Удалить мяч") {
-            public void actionPerformed(ActionEvent event) {
-                field.delball( );
-            }
-        };
-
-        menuBar.add(ballMenu);
-        ballMenu.add(delball);
 
         JMenu controlMenu = new JMenu("Управление");
         menuBar.add(controlMenu);
@@ -74,8 +64,10 @@ public class MainFrame extends JFrame {
                 resumeMenuItem.setEnabled(false);
             }
         };
+
         resumeMenuItem = controlMenu.add(resumeAction);
         resumeMenuItem.setEnabled(false);
+
 // Добавить в центр граничной компоновки поле Field
         getContentPane().add(field, BorderLayout.CENTER);
     }
