@@ -41,6 +41,9 @@ public class MainFrame extends JFrame {
                 if (!pauseMenuItem.isEnabled() && !resumeMenuItem.isEnabled()) {
                     pauseMenuItem.setEnabled(true);
                 }
+                if(!onTenMenuItem.isEnabled() && !offTenMenuItem.isEnabled()){
+                    offTenMenuItem.setEnabled(true);
+                }
             }
         };
         menuBar.add(ballMenu);
